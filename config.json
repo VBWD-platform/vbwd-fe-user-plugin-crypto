@@ -1,0 +1,13 @@
+{
+  "pluginName": "crypto",
+  "displayName": "Crypto (on-chain)",
+  "version": "1.0.0",
+  "debug_mode": false,
+  "enabledCoins": [
+    { "code": "BTC", "label": "Bitcoin" },
+    { "code": "ETH", "label": "Ethereum" },
+    { "code": "USDT", "label": "Tether (ERC-20)" },
+    { "code": "USDC", "label": "USD Coin (ERC-20)" }
+  ],
+  "pollIntervalMs": 4000
+}

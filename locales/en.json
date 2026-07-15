@@ -1,0 +1,22 @@
+{
+  "crypto": {
+    "pay": {
+      "title": "Pay on-chain",
+      "noInvoice": "No invoice specified.",
+      "chooseCoin": "Choose a coin",
+      "confirm": "Get payment address",
+      "creating": "Preparing payment…",
+      "sendExactly": "Send exactly",
+      "copy": "Copy",
+      "copied": "Copied",
+      "expiresIn": "Rate locked — expires in",
+      "expired": "The rate quote expired. No payment was received.",
+      "requote": "Get a new quote",
+      "status": {
+        "awaiting": "Waiting for your payment",
+        "detected": "Payment detected — confirmations",
+        "underpaid": "The amount received is too low — send the remaining balance to the same address."
+      }
+    }
+  }
+}
