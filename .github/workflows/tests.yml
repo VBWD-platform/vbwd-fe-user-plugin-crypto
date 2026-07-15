@@ -45,14 +45,6 @@ jobs:
           cd vbwd-fe-user
           npm install
 
-      # Plugin runtime dep not yet on vbwd-fe-user main (lands with the host
-      # package.json on merge). Install it here so the isolated plugin CI is
-      # self-contained regardless of the host branch.
-      - name: Install crypto plugin runtime deps
-        run: |
-          cd vbwd-fe-user
-          npm install --no-save qrcode-generator@^2.0.4
-
       - name: Run plugin tests
         run: |
           cd vbwd-fe-user
