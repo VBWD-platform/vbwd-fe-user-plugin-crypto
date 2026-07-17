@@ -33,7 +33,9 @@ function installPlugin() {
       translations[locale] = messages;
     },
   };
-  cryptoPaymentPlugin.install(sdk as never);
+  // `install` is optional on the plugin contract; the plugin defines it, and
+  // exercising it is the point of this helper, so assert it is present.
+  cryptoPaymentPlugin.install!(sdk as never);
   return { routes, translations };
 }
 

@@ -67,9 +67,11 @@
       </button>
     </div>
 
-    <!-- Phase 2: render the live charge. -->
+    <!-- Phase 2: render the live charge. `expired` is handled above, so this
+         branch is only reached with a non-null charge — v-else-if narrows the
+         ref for the template type-checker. -->
     <div
-      v-else
+      v-else-if="charge"
       class="crypto-pay__charge"
     >
       <CryptoQrCode :value="charge.uri" />
